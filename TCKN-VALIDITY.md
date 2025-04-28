@@ -94,8 +94,8 @@ SELECT
     CUSTOMER_TYPE,
     CASE 
         WHEN LENGTH(TRIM(TCKN)) <> 11 THEN 0 -- 11 haneli olmalıdır
-        WHEN SUBSTR(TCKN,1,1) = '0' THEN 0 -- İlk basamak sıfır olamaz
-        WHEN SUBSTR(TCKN,-1,1) NOT IN ('0', '2', '4', '6', '8') THEN 0 -- Son basamak çift sayı olmalıdır
+        WHEN d1 = 0 THEN 0 -- İlk basamak sıfır olamaz
+        WHEN d11 NOT IN (0, 2, 4, 6, 8) THEN 0 -- Son basamak çift sayı olmalıdır
         WHEN MOD(((d1 + d3 + d5 + d7 + d9) * 7 - (d2 + d4 + d6 + d8) + 30), 10) <> d10 THEN 0 -- 10. hane doğrulaması
         WHEN MOD((d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10), 10) <> d11 THEN 0 -- 11. hane doğrulaması
         ELSE 1
