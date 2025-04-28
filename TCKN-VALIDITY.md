@@ -2,6 +2,7 @@
 SQL-based data quality validations designed to support data governance and compliance initiatives.
 
 Oracle SQL - TCKN (Türkiye Cumhuriyeti Kimlik Numarası) Validasyonu - Veri Kalitesi Kontrolü
+
 Bu sorgu, Türkiye Cumhuriyeti vatandaşlarına ait kimlik numaralarının (TCKN) doğruluğunu Oracle SQL üzerinde kontrol etmek için geliştirilmiştir.
 Sorgu; TCKN'nin yapısal doğruluğunu, belirli algoritmik kontrolleri ve temel geçerlilik kurallarını uygulayarak her kayıt için IS_VALID kolonunda geçerlilik bilgisini üretir.
 
@@ -32,7 +33,7 @@ Bu sorgu, veri kalitesi yönetimi süreçlerinde güvenilir bir kontrol mekanizm
 Not:
 Sorgu yalnızca yapısal ve algoritmik doğrulama yapar. Kimlik numarasının resmi geçerliliğini (örneğin Nüfus Müdürlüğü verisiyle karşılaştırmayı) sağlamaz.
 
-
+SORGU:
 
 WITH parsed_tckn AS (
     SELECT
