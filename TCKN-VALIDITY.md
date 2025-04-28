@@ -31,7 +31,7 @@ Bu sorgu, veri kalitesi yönetimi süreçlerinde güvenilir bir kontrol mekanizm
 
 Not:
 Sorgu yalnızca yapısal ve algoritmik doğrulama yapar. Kimlik numarasının resmi geçerliliğini (örneğin Nüfus Müdürlüğü verisiyle karşılaştırmayı) sağlamaz.
-![image](https://github.com/user-attachments/assets/0b0b5c67-0547-48b0-81ce-0f9b7ba79df3)
+
 
 
 WITH parsed_tckn AS (
@@ -69,5 +69,4 @@ SELECT
         WHEN MOD((d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10), 10) <> d11 THEN 0 --11. hane
         ELSE 1
     END AS IS_VALID
-FROM parsed_tckn;![image](https://github.com/user-attachments/assets/a3861650-beef-44ac-99e2-a1c3ceff1ee4)
-
+FROM parsed_tckn;
