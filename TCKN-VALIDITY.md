@@ -18,10 +18,10 @@ Sorgu; TCKN'nin yapısal doğruluğunu, belirli algoritmik kontrolleri ve temel 
 - TCKN 11 haneli olmalıdır.
 - İlk hane 0 olamaz.
 - Son hane çift sayı (0, 2, 4, 6, 8) olmalıdır.
-- 10. hane doğrulaması algoritmaya göre yapılır:  
+- Onuncu hane doğrulaması algoritmaya göre yapılır:  
   1., 3., 5., 7. ve 9. hanelerin toplamının 7 ile çarpımından 2., 4., 6. ve 8. haneler çıkartılır.  
   Sonucun 10'a bölümünden kalan sayı 10. haneye eşit olmalıdır.
-- 11. hane doğrulaması algoritmaya göre yapılır:  
+- On birinci hane doğrulaması algoritmaya göre yapılır:  
   İlk 10 hanenin toplamının 10'a bölümünden kalan, 11. haneye eşit olmalıdır.
 
 ### Opsiyonel Filtreler
